@@ -1,0 +1,177 @@
+.link, button {
+cursor: pointer;
+}
+a {
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+a:visited {
+color: rgb(255, 255, 255);
+text-decoration: none;
+}
+
+.main {
+background-image: url("../images/bg-field2020.jpg");
+background-size: cover;
+background-position: center;
+overflow: hidden;
+background-repeat: no-repeat;
+background-attachment: fixed;
+}
+.container {
+max-width: 1200px;
+width: 100%;
+margin: auto;
+font-family: Arial, Helvetica, sans-serif;
+}
+.main .container {
+min-height: 720px;
+}
+.visitcard {
+background-color: rgba(0,0,0,0.2);
+max-width: 760px;
+width: 100%;
+padding: 10px;
+margin-top: 20px;
+display: flex;
+align-items: flex-start;
+justify-content: space-between;
+}
+.portrait {
+margin: 10px;
+}
+.anime-pict {
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+.anime-pict img {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.anime-pict img.first {
+  opacity: 0;
+}
+.anime-pict:hover img.first {
+  opacity: 1;
+}
+.anime-pict:hover img.second  {
+  opacity: 0;
+}
+.worksheet {
+width: 357px;
+margin: 10px;
+box-sizing: border-box;
+}
+.name-field {
+width: 100%;
+padding-top: 28px;
+padding-bottom: 28px;
+text-align: center;
+line-height: 1;
+font-size: 18px;
+background: rgb(255,255,255,0.5);
+}
+.name-field:hover {
+background: rgb(255,255,255,1);
+text-transform: uppercase;
+}
+.name-field:nth-child(2) {
+background: rgba(255,0,0,0.5);
+}
+.name-field:nth-child(2):hover {
+background: rgba(255,0,0,1);
+}
+
+.box-facts {
+float: right;
+margin-top: -90px;
+margin-bottom: 20px;
+background-color: rgba(255,255,255,0.8);
+max-width: 760px;
+width: 100%;
+padding: 10px;
+border: none;
+font-size: 14px;
+font-weight: bold;
+}
+.box-facts span {
+color: red;
+}
+.box-facts li {
+margin-bottom: 8px;
+width: 98%;
+}
+footer{
+width: 100%;
+background-color: rgb(0, 0, 0);
+}
+footer .container {
+padding: 22px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: rgb(255,255,255);
+font-size: 12px;
+}
+footer .social img {
+margin-left: 30px;
+margin-rigft: 30px;
+}
+
+
+@media (max-width:1160px) {
+.box-facts {
+margin-top: 0;
+}
+}
+
+
+@media (max-width:767px) {
+.visitcard {
+margin-top: 10px;
+flex-direction: column;
+align-items: center;
+}
+.portrait {
+order: 2;
+}
+.worksheet {
+max-width:  357px;
+width:100%;
+order: 1;
+flex: 1;
+}
+.box-facts {
+float: none;
+font-weight: normal;
+}
+
+@media (max-width:320px) {
+.name-field {
+padding: 14px 0 14px 0;
+font-size: 14px;
+}
+.anime-pict {
+  width: 280px;
+  height: 280px;
+  }
+.anime-pict img {
+  width: 280px;
+  height: 280px;
+  }
+.box-facts {
+font-size: 12px;
+}
+footer .container {
+padding: 12px 0;
+font-size: 10px;
+}
+footer .social img {
+margin-left: 20px;
+margin-rigft: 20px;
+}
+}
